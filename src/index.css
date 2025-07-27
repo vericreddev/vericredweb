@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0F172A;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold text-white mb-8 md:text-4xl text-center;
+  }
+  
+  .btn {
+    @apply px-6 py-3 font-medium rounded-lg transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-white hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border border-accent text-accent hover:bg-accent hover:bg-opacity-10;
+  }
+  
+  .card {
+    @apply p-6 rounded-xl bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 transition-all duration-300 hover:border-accent hover:border-opacity-50;
+  }
+}

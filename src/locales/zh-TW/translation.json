@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "problem": "問題",
+    "howItWorks": "運作原理",
+    "tokenomics": "代幣經濟",
+    "roadmap": "路線圖",
+    "community": "社區",
+    "launchApp": "啟動應用"
+  },
+  "hero": {
+    "title": "你的技能，從此無法偽造",
+    "description": "VeriChain 是全球首個基於區塊鏈的個人技能與知識確權協議。我們將你的能力轉化為可驗證的數字資產，永久鏈接你的職業未來。",
+    "whitepaper": "閱讀白皮書",
+    "discord": "加入 Discord 社區"
+  },
+  "problem": {
+    "title": "傳統履歷正在失效",
+    "card1": {
+      "title": "資訊不透明",
+      "content": "誇大和虛假的技能描述氾濫，雇主難以甄別候選人的真實能力，招聘成本高昂。"
+    },
+    "card2": {
+      "title": "價值難衡量",
+      "content": "你為掌握技能付出的努力和時間，無法被量化和公平定價。線上課程證書的權威性參差不齊。"
+    },
+    "card3": {
+      "title": "機會錯配",
+      "content": "真正有能力的人才可能因為履歷不夠「漂亮」而被埋沒，而企業也可能錯失最合適的人選。"
+    }
+  },
+  "howItWorks": {
+    "title": "簡單三步，驗證你的價值",
+    "step1": {
+      "title": "學習與獲得 (Learn & Earn)",
+      "description": "在我們合作的教育平台完成課程，或通過去中心化的同行評審，將你的知識和技能轉化為 $VRC 代幣。你的每一次進步，都在為你的數字身份添磚加瓦。"
+    },
+    "step2": {
+      "title": "確權與展示 (Certify & Showcase)",
+      "description": "獲得的 $VRC 代幣將永久記錄在區塊鏈上，成為你不可篡改的技能憑證。你可以將它展示在你的個人主頁、履歷或社交媒體上。"
+    },
+    "step3": {
+      "title": "鏈接與變現 (Link & Monetize)",
+      "description": "雇主可以通過你的 VeriChain 檔案快速驗證你的能力。你也可以在我們的任務市場中，用 $VRC 作為信譽背書，競標高端項目，實現技能變現。"
+    }
+  },
+  "tokenomics": {
+    "title": "不僅僅是代幣，更是你的技能護照 ($VRC Token)",
+    "ecosystem": "生態系統",
+    "community": "社區",
+    "team": "團隊",
+    "reserve": "儲備",
+    "earn": {
+      "title": "賺取代幣 (Earn)",
+      "description": "完成認證課程、通過技能測試、參與社區治理、評審他人作品。"
+    },
+    "utility": {
+      "title": "使用代幣 (Utility)",
+      "description": "作為求職/項目競標的信譽押金、支付平台高級功能費用、購買獨家學習內容、參與社區關鍵決策投票。"
+    }
+  },
+  "roadmap": {
+    "title": "我們的征途",
+    "q3_2025": {
+      "period": "Q3 2025",
+      "title": "核心協議開發",
+      "description": "白皮書發布。"
+    },
+    "q4_2025": {
+      "period": "Q4 2025",
+      "title": "VeriChain 官網及社區啟動",
+      "description": "與首批教育平台建立合作。"
+    },
+    "q1_2026": {
+      "period": "Q1 2026",
+      "title": "Beta版應用上線",
+      "description": "開啟首輪技能認證測試。"
+    },
+    "q2_2026": {
+      "period": "Q2 2026",
+      "title": "$VRC 代幣公開發行",
+      "description": "上線任務市場（Talent Marketplace）Beta版。"
+    },
+    "future": {
+      "period": "未來",
+      "title": "持續創新",
+      "description": "引入AI進行技能評估、構建去中心化人力資源協議……"
+     }
+   },
+   "footer": {
+     "description": "你的技能，從此無法偽造。",
+     "product": "產品",
+     "company": "公司",
+     "resources": "資源",
+     "theProblem": "問題",
+     "howItWorks": "運作原理",
+     "tokenomics": "代幣經濟",
+     "aboutUs": "關於我們",
+     "roadmap": "路線圖",
+     "contact": "聯絡我們",
+     "whitepaper": "白皮書",
+     "community": "社區",
+     "copyright": "© 2025 VeriChain. 保留所有權利。"
+   }
+ }

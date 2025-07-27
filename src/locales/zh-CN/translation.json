@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "problem": "问题",
+    "howItWorks": "工作原理",
+    "tokenomics": "代币经济",
+    "roadmap": "路线图",
+    "community": "社区",
+    "launchApp": "启动应用"
+  },
+  "hero": {
+    "title": "你的技能，从此无法伪造",
+    "description": "VeriChain 是全球首个基于区块链的个人技能与知识确权协议。我们将你的能力转化为可验证的数字资产，永久链接你的职业未来。",
+    "whitepaper": "阅读白皮书",
+    "discord": "加入 Discord 社区"
+  },
+  "problem": {
+    "title": "传统简历正在失效",
+    "card1": {
+      "title": "信息不透明",
+      "content": "夸大和虚假的技能描述泛滥，雇主难以甄别候选人的真实能力，招聘成本高昂。"
+    },
+    "card2": {
+      "title": "价值难衡量",
+      "content": "你为掌握技能付出的努力和时间，无法被量化和公平定价。在线课程证书的权威性参差不齐。"
+    },
+    "card3": {
+      "title": "机会错配",
+      "content": "真正有能力的人才可能因为简历不够\"漂亮\"而被埋没，而企业也可能错失最合适的人选。"
+    }
+  },
+  "howItWorks": {
+    "title": "简单三步，验证你的价值",
+    "step1": {
+      "title": "学习与获得 (Learn & Earn)",
+      "description": "在我们合作的教育平台完成课程，或通过去中心化的同行评审，将你的知识和技能转化为 $VRC 代币。你的每一次进步，都在为你的数字身份添砖加瓦。"
+    },
+    "step2": {
+      "title": "确权与展示 (Certify & Showcase)",
+      "description": "获得的 $VRC 代币将永久记录在区块链上，成为你不可篡改的技能凭证。你可以将它展示在你的个人主页、简历或社交媒体上。"
+    },
+    "step3": {
+      "title": "链接与变现 (Link & Monetize)",
+      "description": "雇主可以通过你的 VeriChain 档案快速验证你的能力。你也可以在我们的任务市场中，用 $VRC 作为信誉背书，竞标高端项目，实现技能变现。"
+    }
+  },
+  "tokenomics": {
+    "title": "不仅仅是代币，更是你的技能护照 ($VRC Token)",
+    "ecosystem": "生态系统",
+    "community": "社区",
+    "team": "团队",
+    "reserve": "储备",
+    "earn": {
+      "title": "赚取代币 (Earn)",
+      "description": "完成认证课程、通过技能测试、参与社区治理、评审他人作品。"
+    },
+    "utility": {
+      "title": "使用代币 (Utility)",
+      "description": "作为求职/项目竞标的信誉押金、支付平台高级功能费用、购买独家学习内容、参与社区关键决策投票。"
+    }
+  },
+  "roadmap": {
+    "title": "我们的征途",
+    "q3_2025": {
+      "period": "Q3 2025",
+      "title": "核心协议开发",
+      "description": "白皮书发布。"
+    },
+    "q4_2025": {
+      "period": "Q4 2025",
+      "title": "VeriChain 官网及社区启动",
+      "description": "与首批教育平台建立合作。"
+    },
+    "q1_2026": {
+      "period": "Q1 2026",
+      "title": "Beta版应用上线",
+      "description": "开启首轮技能认证测试。"
+    },
+    "q2_2026": {
+      "period": "Q2 2026",
+      "title": "$VRC 代币公开发行",
+      "description": "上线任务市场（Talent Marketplace）Beta版。"
+    },
+    "future": {
+      "period": "未来",
+      "title": "持续创新",
+      "description": "引入AI进行技能评估、构建去中心化人力资源协议……"
+     }
+   },
+   "footer": {
+     "description": "你的技能，从此无法伪造。",
+     "product": "产品",
+     "company": "公司",
+     "resources": "资源",
+     "theProblem": "问题",
+     "howItWorks": "工作原理",
+     "tokenomics": "代币经济",
+     "aboutUs": "关于我们",
+     "roadmap": "路线图",
+     "contact": "联系我们",
+     "whitepaper": "白皮书",
+     "community": "社区",
+     "copyright": "© 2025 VeriChain. 保留所有权利。"
+   }
+ }

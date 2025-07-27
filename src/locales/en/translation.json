@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "problem": "The Problem",
+    "howItWorks": "How It Works",
+    "tokenomics": "Tokenomics",
+    "roadmap": "Roadmap",
+    "community": "Community",
+    "launchApp": "Launch App"
+  },
+  "hero": {
+    "title": "Your Skills, Impossible to Forge",
+    "description": "VeriChain is the world's first blockchain-based protocol for personal skills and knowledge verification. We transform your abilities into verifiable digital assets, permanently linked to your professional future.",
+    "whitepaper": "Read Whitepaper",
+    "discord": "Join Discord Community"
+  },
+  "problem": {
+    "title": "Traditional Resumes Are Failing",
+    "card1": {
+      "title": "Information Opacity",
+      "content": "Exaggerated and false skill descriptions are rampant, making it difficult for employers to identify candidates' true abilities, resulting in high recruitment costs."
+    },
+    "card2": {
+      "title": "Value Difficult to Measure",
+      "content": "The effort and time you spend mastering skills cannot be quantified and fairly priced. The authority of online course certificates varies greatly."
+    },
+    "card3": {
+      "title": "Opportunity Mismatch",
+      "content": "Truly capable talents may be buried because their resumes aren't 'pretty' enough, while companies may miss the most suitable candidates."
+    }
+  },
+  "howItWorks": {
+    "title": "Three Simple Steps to Verify Your Value",
+    "step1": {
+      "title": "Learn & Earn",
+      "description": "Complete courses on our partner education platforms, or through decentralized peer review, transform your knowledge and skills into $VRC tokens. Every progress you make adds building blocks to your digital identity."
+    },
+    "step2": {
+      "title": "Certify & Showcase",
+      "description": "The $VRC tokens you earn will be permanently recorded on the blockchain, becoming your immutable skill credentials. You can showcase them on your personal homepage, resume, or social media."
+    },
+    "step3": {
+      "title": "Link & Monetize",
+      "description": "Employers can quickly verify your abilities through your VeriChain profile. You can also use $VRC as reputation backing in our task marketplace to bid for high-end projects and monetize your skills."
+    }
+  },
+  "tokenomics": {
+    "title": "More Than Just a Token, It's Your Skills Passport ($VRC Token)",
+    "ecosystem": "Ecosystem",
+    "community": "Community",
+    "team": "Team",
+    "reserve": "Reserve",
+    "earn": {
+      "title": "Earn Tokens",
+      "description": "Complete certification courses, pass skill tests, participate in community governance, and review others' work."
+    },
+    "utility": {
+      "title": "Token Utility",
+      "description": "Use as reputation deposit for job applications/project bidding, pay for platform premium features, purchase exclusive learning content, and participate in key community decision voting."
+    }
+  },
+  "roadmap": {
+    "title": "Our Journey",
+    "q3_2025": {
+      "period": "Q3 2025",
+      "title": "Core Protocol Development",
+      "description": "Whitepaper release."
+    },
+    "q4_2025": {
+      "period": "Q4 2025",
+      "title": "VeriChain Official Website & Community Launch",
+      "description": "Establish partnerships with first batch of educational platforms."
+    },
+    "q1_2026": {
+      "period": "Q1 2026",
+      "title": "Beta Application Launch",
+      "description": "Launch first round of skill certification testing."
+    },
+    "q2_2026": {
+      "period": "Q2 2026",
+      "title": "$VRC Token Public Offering",
+      "description": "Launch Talent Marketplace Beta version."
+    },
+    "future": {
+      "period": "Future",
+      "title": "Continuous Innovation",
+      "description": "Introduce AI for skill assessment, build decentralized human resources protocol..."
+     }
+   },
+   "footer": {
+     "description": "Your skills, impossible to forge.",
+     "product": "Product",
+     "company": "Company",
+     "resources": "Resources",
+     "theProblem": "The Problem",
+     "howItWorks": "How it Works",
+     "tokenomics": "Tokenomics",
+     "aboutUs": "About Us",
+     "roadmap": "Roadmap",
+     "contact": "Contact",
+     "whitepaper": "Whitepaper",
+     "community": "Community",
+     "copyright": "© 2025 VeriChain. All Rights Reserved."
+   }
+ }

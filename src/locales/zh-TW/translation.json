@@ -147,5 +147,43 @@
         "bio": "數位經濟領域備受尊敬的學者。Reed博士是史丹佛大學數位經濟實驗室的研究員，她的工作重點是未來工作、數位認證系統以及技術對勞動力市場的影響。"
       }
     }
+  },
+  "community": {
+    "title": "加入我們的社群",
+    "description": "與來自世界各地的開發者、學習者和行業專家建立聯繫。成為技能驗證未來的一部分。",
+    "twitter": {
+      "description": "獲取VeriCred團隊的最新消息、公告和見解。"
+    },
+    "discord": {
+      "description": "加入我們充滿活力的社群，進行即時討論、獲得支援和協作。"
+    },
+    "telegram": {
+      "description": "在我們的官方Telegram群組中獲取即時更新並與社群成員聯繫。"
+    },
+    "github": {
+      "description": "探索我們的開源程式碼，為開發做出貢獻，並追蹤我們的技術進展。"
+    },
+    "medium": {
+      "description": "閱讀我們團隊的深度文章、技術見解和思想領導力內容。"
+    },
+    "linkedin": {
+      "description": "與我們建立專業聯繫，了解公司更新和合作夥伴關係。"
+    },
+    "followers": "追蹤者",
+    "joinNow": "立即加入",
+    "stats": {
+      "title": "社群概覽",
+      "description": "我們不斷增長的全球創新者和早期採用者社群",
+      "totalMembers": "總成員數",
+      "countries": "國家/地區",
+      "dailyActive": "日活躍用戶",
+      "support": "支援"
+    },
+    "cta": {
+      "title": "準備好參與了嗎？",
+      "description": "加入數千名開發者、學習者和行業專家，共同構建技能驗證的未來。",
+      "joinDiscord": "加入Discord",
+      "followTwitter": "追蹤Twitter"
+    }
   }
 }

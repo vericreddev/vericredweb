@@ -165,5 +165,43 @@
         "bio": "A respected academic in the field of digital economy. Dr. Reed is a Research Fellow at Stanford's Digital Economy Lab, where her work focuses on the future of work, digital credentialing systems, and the impact of technology on labor markets."
       }
     }
+  },
+  "community": {
+    "title": "Join Our Community",
+    "description": "Connect with developers, learners, and industry experts from around the world. Be part of the future of skill verification.",
+    "twitter": {
+      "description": "Stay updated with the latest news, announcements, and insights from the VeriCred team."
+    },
+    "discord": {
+      "description": "Join our vibrant community for real-time discussions, support, and collaboration."
+    },
+    "telegram": {
+      "description": "Get instant updates and connect with community members in our official Telegram group."
+    },
+    "github": {
+      "description": "Explore our open-source code, contribute to development, and track our technical progress."
+    },
+    "medium": {
+      "description": "Read in-depth articles, technical insights, and thought leadership from our team."
+    },
+    "linkedin": {
+      "description": "Connect with us professionally and stay informed about company updates and partnerships."
+    },
+    "followers": "Followers",
+    "joinNow": "Join Now",
+    "stats": {
+      "title": "Community at a Glance",
+      "description": "Our growing global community of innovators and early adopters",
+      "totalMembers": "Total Members",
+      "countries": "Countries",
+      "dailyActive": "Daily Active",
+      "support": "Support"
+    },
+    "cta": {
+      "title": "Ready to Get Involved?",
+      "description": "Join thousands of developers, learners, and industry experts who are building the future of skill verification together.",
+      "joinDiscord": "Join Discord",
+      "followTwitter": "Follow on Twitter"
+    }
   }
 }

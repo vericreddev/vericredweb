@@ -147,5 +147,43 @@
         "bio": "数字经济领域备受尊敬的学者。Reed博士是斯坦福大学数字经济实验室的研究员，她的工作重点是未来工作、数字认证系统以及技术对劳动力市场的影响。"
       }
     }
+  },
+  "community": {
+    "title": "加入我们的社区",
+    "description": "与来自世界各地的开发者、学习者和行业专家建立联系。成为技能验证未来的一部分。",
+    "twitter": {
+      "description": "获取VeriCred团队的最新消息、公告和见解。"
+    },
+    "discord": {
+      "description": "加入我们充满活力的社区，进行实时讨论、获得支持和协作。"
+    },
+    "telegram": {
+      "description": "在我们的官方Telegram群组中获取即时更新并与社区成员联系。"
+    },
+    "github": {
+      "description": "探索我们的开源代码，为开发做出贡献，并跟踪我们的技术进展。"
+    },
+    "medium": {
+      "description": "阅读我们团队的深度文章、技术见解和思想领导力内容。"
+    },
+    "linkedin": {
+      "description": "与我们建立专业联系，了解公司更新和合作伙伴关系。"
+    },
+    "followers": "关注者",
+    "joinNow": "立即加入",
+    "stats": {
+      "title": "社区概览",
+      "description": "我们不断增长的全球创新者和早期采用者社区",
+      "totalMembers": "总成员数",
+      "countries": "国家/地区",
+      "dailyActive": "日活跃用户",
+      "support": "支持"
+    },
+    "cta": {
+      "title": "准备好参与了吗？",
+      "description": "加入数千名开发者、学习者和行业专家，共同构建技能验证的未来。",
+      "joinDiscord": "加入Discord",
+      "followTwitter": "关注Twitter"
+    }
   }
 }

@@ -13,6 +13,7 @@ import Tokenomics from './sections/Tokenomics';
 import Team from './sections/Team';
 import Roadmap from './sections/Roadmap';
 import Whitepaper from './sections/Whitepaper';
+import Community from './sections/Community';
 
 // Home Page Component
 const HomePage = () => (
@@ -34,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/whitepaper" element={<Whitepaper />} />
+          <Route path="/community" element={<Community />} />
         </Routes>
         <Footer />
       </div>

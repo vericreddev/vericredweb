@@ -25,12 +25,13 @@ i18n
   .init({
     resources,
     fallbackLng: 'en', // 默认语言
+    lng: 'en', // 强制设置初始语言为英文
     debug: true, // 开发环境下开启调试
     interpolation: {
       escapeValue: false, // 不转义HTML
     },
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage'],
       caches: ['localStorage'],
     }
   });

@@ -7,10 +7,14 @@ const Community = () => {
   const [showComingSoon, setShowComingSoon] = useState(false);
   const [selectedPlatform, setSelectedPlatform] = useState('');
 
-  const handlePlatformClick = (platformName) => {
-    setSelectedPlatform(platformName);
-    setShowComingSoon(true);
-    setTimeout(() => setShowComingSoon(false), 3000);
+  const handlePlatformClick = (platformName, url) => {
+    if (platformName === 'Twitter') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } else {
+      setSelectedPlatform(platformName);
+      setShowComingSoon(true);
+      setTimeout(() => setShowComingSoon(false), 3000);
+    }
   };
 
   const socialLinks = [
@@ -21,7 +25,7 @@ const Community = () => {
           <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
         </svg>
       ),
-      url: 'https://twitter.com/VeriCred_',
+      url: 'https://x.com/VeriCred',
       description: t('community.twitter.description'),
 
       color: 'from-blue-400 to-blue-600'
@@ -150,7 +154,7 @@ const Community = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, y: -5 }}
               className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-secondary/50 to-secondary/20 backdrop-blur-sm border border-accent/20 p-8 hover:border-accent/40 transition-all duration-300 cursor-pointer"
-              onClick={() => handlePlatformClick(social.name)}
+              onClick={() => handlePlatformClick(social.name, social.url)}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${social.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
               
@@ -170,9 +174,9 @@ const Community = () => {
                 </p>
                 
                 <div className="flex items-center text-accent group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="mr-2">敬请期待</span>
+                  <span className="mr-2">{social.name === 'Twitter' ? '立即访问' : '敬请期待'}</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={social.name === 'Twitter' ? "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" : "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"} />
                   </svg>
                 </div>
               </div>
@@ -229,7 +233,7 @@ const Community = () => {
               加入 Discord 社区
             </button>
             <button
-              onClick={() => handlePlatformClick('Twitter')}
+              onClick={() => handlePlatformClick('Twitter', 'https://x.com/VeriCred')}
               className="btn btn-secondary text-lg px-8 py-4"
             >
               关注 Twitter

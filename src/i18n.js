@@ -31,7 +31,11 @@ i18n
       escapeValue: false, // 不转义HTML
     },
     detection: {
-      order: ['localStorage'],
+      order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lng',
+      lookupCookie: 'i18next',
+      lookupLocalStorage: 'i18nextLng',
+      lookupSessionStorage: 'i18nextLng',
       caches: ['localStorage'],
     }
   });

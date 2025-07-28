@@ -202,6 +202,13 @@
       "description": "Join thousands of developers, learners, and industry experts who are building the future of skill verification together.",
       "joinDiscord": "Join Discord",
       "followTwitter": "Follow on Twitter"
-    }
+    },
+    "modal": {
+      "title": "Community",
+      "description": "Community is under construction, stay tuned!",
+      "button": "Got it"
+    },
+    "visitNow": "Visit Now",
+    "comingSoon": "Coming Soon"
   }
 }

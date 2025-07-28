@@ -111,13 +111,13 @@ const Community = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="text-6xl mb-4">🚧</div>
-            <h3 className="text-2xl font-bold mb-4 text-accent">{selectedPlatform} 社区</h3>
-            <p className="text-light mb-6">社区正在建设中，敬请期待！</p>
+            <h3 className="text-2xl font-bold mb-4 text-accent">{selectedPlatform} {t('community.modal.title')}</h3>
+            <p className="text-light mb-6">{t('community.modal.description')}</p>
             <button
               onClick={() => setShowComingSoon(false)}
               className="btn btn-primary"
             >
-              知道了
+              {t('community.modal.button')}
             </button>
           </motion.div>
         </motion.div>
@@ -174,7 +174,7 @@ const Community = () => {
                 </p>
                 
                 <div className="flex items-center text-accent group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="mr-2">{social.name === 'Twitter' ? '立即访问' : '敬请期待'}</span>
+                  <span className="mr-2">{social.name === 'Twitter' ? t('community.visitNow') : t('community.comingSoon')}</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={social.name === 'Twitter' ? "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" : "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"} />
                   </svg>
@@ -230,13 +230,13 @@ const Community = () => {
               onClick={() => handlePlatformClick('Discord')}
               className="btn btn-primary text-lg px-8 py-4"
             >
-              加入 Discord 社区
+              {t('community.cta.joinDiscord')}
             </button>
             <button
               onClick={() => handlePlatformClick('Twitter', 'https://x.com/VeriCred')}
               className="btn btn-secondary text-lg px-8 py-4"
             >
-              关注 Twitter
+              {t('community.cta.followTwitter')}
             </button>
           </div>
         </motion.div>

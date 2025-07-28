@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const location = useLocation();
+  const isWhitepaperPage = location.pathname === '/whitepaper';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,17 +33,28 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/80 backdrop-blur-md py-3 shadow-lg' : 'py-5'}`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold text-white">VeriCred</a>
+        {!isWhitepaperPage ? (
+          <Link to="/" className="text-2xl font-bold text-white">VeriCred</Link>
+        ) : (
+          <div className="flex-1"></div>
+        )}
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#problem" className="text-light hover:text-accent transition-colors">{t('navbar.problem')}</a>
-          <a href="#how-it-works" className="text-light hover:text-accent transition-colors">{t('navbar.howItWorks')}</a>
-          <a href="#tokenomics" className="text-light hover:text-accent transition-colors">{t('navbar.tokenomics')}</a>
-          <a href="#roadmap" className="text-light hover:text-accent transition-colors">{t('navbar.roadmap')}</a>
-          <a href="#community" className="text-light hover:text-accent transition-colors">{t('navbar.community')}</a>
+          {!isWhitepaperPage ? (
+            <>
+              <a href="#problem" className="text-light hover:text-accent transition-colors">{t('navbar.problem')}</a>
+              <a href="#how-it-works" className="text-light hover:text-accent transition-colors">{t('navbar.howItWorks')}</a>
+              <a href="#tokenomics" className="text-light hover:text-accent transition-colors">{t('navbar.tokenomics')}</a>
+              <a href="#roadmap" className="text-light hover:text-accent transition-colors">{t('navbar.roadmap')}</a>
+              <a href="#community" className="text-light hover:text-accent transition-colors">{t('navbar.community')}</a>
+            </>
+          ) : (
+            <Link to="/" className="text-light hover:text-accent transition-colors">← Back to Home</Link>
+          )}
+          <Link to="/whitepaper" className="text-light hover:text-accent transition-colors">Whitepaper</Link>
           <LanguageSwitcher />
-          <a href="#" className="btn btn-primary ml-4">{t('navbar.launchApp')}</a>
+          {!isWhitepaperPage && <a href="#" className="btn btn-primary ml-4">{t('navbar.launchApp')}</a>}
         </div>
 
         {/* Mobile Menu Button */}
@@ -84,13 +98,20 @@ const Navbar = () => {
           className="md:hidden bg-primary/95 backdrop-blur-md"
         >
           <div className="container py-4 flex flex-col space-y-4">
-            <a href="#problem" className="text-light hover:text-accent transition-colors">{t('navbar.problem')}</a>
-            <a href="#how-it-works" className="text-light hover:text-accent transition-colors">{t('navbar.howItWorks')}</a>
-            <a href="#tokenomics" className="text-light hover:text-accent transition-colors">{t('navbar.tokenomics')}</a>
-            <a href="#roadmap" className="text-light hover:text-accent transition-colors">{t('navbar.roadmap')}</a>
-            <a href="#community" className="text-light hover:text-accent transition-colors">{t('navbar.community')}</a>
+            {!isWhitepaperPage ? (
+              <>
+                <a href="#problem" className="text-light hover:text-accent transition-colors">{t('navbar.problem')}</a>
+                <a href="#how-it-works" className="text-light hover:text-accent transition-colors">{t('navbar.howItWorks')}</a>
+                <a href="#tokenomics" className="text-light hover:text-accent transition-colors">{t('navbar.tokenomics')}</a>
+                <a href="#roadmap" className="text-light hover:text-accent transition-colors">{t('navbar.roadmap')}</a>
+                <a href="#community" className="text-light hover:text-accent transition-colors">{t('navbar.community')}</a>
+              </>
+            ) : (
+              <Link to="/" className="text-light hover:text-accent transition-colors">← Back to Home</Link>
+            )}
+            <Link to="/whitepaper" className="text-light hover:text-accent transition-colors">Whitepaper</Link>
             <LanguageSwitcher />
-            <a href="#" className="btn btn-primary self-start">{t('navbar.launchApp')}</a>
+            {!isWhitepaperPage && <a href="#" className="btn btn-primary self-start">{t('navbar.launchApp')}</a>}
           </div>
         </motion.div>
       )}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -57,7 +58,7 @@ const Footer = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">{t('footer.resources')}</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-light hover:text-accent transition-colors">{t('footer.whitepaper')}</a></li>
+                <li><Link to="/whitepaper" className="text-light hover:text-accent transition-colors">{t('footer.whitepaper')}</Link></li>
                 <li><a href="#community" className="text-light hover:text-accent transition-colors">{t('footer.community')}</a></li>
               </ul>
             </div>

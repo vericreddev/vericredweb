@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -43,9 +44,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <a href="#" className="btn btn-primary w-full sm:w-auto">
+            <Link to="/whitepaper" className="btn btn-primary w-full sm:w-auto">
               {t('hero.whitepaper')}
-            </a>
+            </Link>
             <a href="#" className="btn btn-secondary w-full sm:w-auto">
               {t('hero.discord')}
             </a>

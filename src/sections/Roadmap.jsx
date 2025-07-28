@@ -5,31 +5,31 @@ import { useTranslation } from 'react-i18next';
 const Roadmap = () => {
   const { t } = useTranslation();
   
-  const milestones = [
+  const phases = [
     {
-      period: t('roadmap.q3_2025.period'),
-      title: t('roadmap.q3_2025.title'),
-      description: t('roadmap.q3_2025.description')
+      period: t('roadmap.phase1.period'),
+      title: t('roadmap.phase1.title'),
+      tasks: t('roadmap.phase1.tasks', { returnObjects: true })
     },
     {
-      period: t('roadmap.q4_2025.period'),
-      title: t('roadmap.q4_2025.title'),
-      description: t('roadmap.q4_2025.description')
+      period: t('roadmap.phase2.period'),
+      title: t('roadmap.phase2.title'),
+      tasks: t('roadmap.phase2.tasks', { returnObjects: true })
     },
     {
-      period: t('roadmap.q1_2026.period'),
-      title: t('roadmap.q1_2026.title'),
-      description: t('roadmap.q1_2026.description')
+      period: t('roadmap.phase3.period'),
+      title: t('roadmap.phase3.title'),
+      tasks: t('roadmap.phase3.tasks', { returnObjects: true })
     },
     {
-      period: t('roadmap.q2_2026.period'),
-      title: t('roadmap.q2_2026.title'),
-      description: t('roadmap.q2_2026.description')
+      period: t('roadmap.phase4.period'),
+      title: t('roadmap.phase4.title'),
+      tasks: t('roadmap.phase4.tasks', { returnObjects: true })
     },
     {
-      period: t('roadmap.future.period'),
-      title: t('roadmap.future.title'),
-      description: t('roadmap.future.description')
+      period: t('roadmap.phase5.period'),
+      title: t('roadmap.phase5.title'),
+      tasks: t('roadmap.phase5.tasks', { returnObjects: true })
     }
   ];
 
@@ -47,29 +47,39 @@ const Roadmap = () => {
         </motion.h2>
         
         <div className="relative max-w-4xl mx-auto">
-          {/* Horizontal Line */}
-          <div className="absolute left-0 right-0 top-16 h-0.5 bg-accent/30 hidden md:block" />
+          {/* Vertical Timeline Line */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-accent/30 hidden md:block transform -translate-x-1/2" />
           
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            {milestones.map((milestone, index) => (
+          <div className="space-y-12">
+            {phases.map((phase, index) => (
               <motion.div 
                 key={index}
-                className="relative"
+                className="relative flex flex-col md:flex-row items-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                {/* Circle on Timeline */}
-                <div className="hidden md:block absolute left-1/2 top-16 w-4 h-4 rounded-full bg-accent transform -translate-x-1/2 -translate-y-1/2 z-10" />
-                
-                {/* Period */}
-                <div className="text-accent font-semibold text-lg mb-4 md:text-center">{milestone.period}</div>
+                {/* Timeline Circle */}
+                <div className="hidden md:block absolute left-1/2 w-4 h-4 rounded-full bg-accent z-10 transform -translate-x-1/2" />
                 
                 {/* Content */}
-                <div className="md:pt-10">
-                  <h3 className="text-white font-semibold mb-2">{milestone.title}</h3>
-                  <p className="text-light text-sm">{milestone.description}</p>
+                <div className={`bg-primary/50 backdrop-blur-sm border border-accent/20 rounded-lg p-6 w-full md:w-96 hover:border-accent/40 transition-colors ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
+                  {/* Period */}
+                  <div className="text-accent font-semibold text-lg mb-2">{phase.period}</div>
+                  
+                  {/* Title */}
+                  <h3 className="text-white font-bold text-xl mb-4">{phase.title}</h3>
+                  
+                  {/* Tasks */}
+                  <ul className="space-y-2">
+                    {phase.tasks && phase.tasks.map((task, taskIndex) => (
+                      <li key={taskIndex} className="text-light text-sm flex items-start">
+                        <span className="text-accent mr-2 mt-1 text-xs">•</span>
+                        <span>{task}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}

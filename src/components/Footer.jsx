@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Side */}
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4">VeriChain</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">VeriCred</h2>
             <p className="text-light mb-6">{t('footer.description')}</p>
             <div className="flex space-x-4">
               <a href="#" className="text-light hover:text-accent transition-colors">

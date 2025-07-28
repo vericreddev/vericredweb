@@ -30,7 +30,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/80 backdrop-blur-md py-3 shadow-lg' : 'py-5'}`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold text-white">VeriChain</a>
+        <a href="#" className="text-2xl font-bold text-white">VeriCred</a>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">

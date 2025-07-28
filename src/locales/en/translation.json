@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "Your Skills, Impossible to Forge",
-    "description": "VeriChain is the world's first blockchain-based protocol for personal skills and knowledge verification. We transform your abilities into verifiable digital assets, permanently linked to your professional future.",
+    "description": "VeriCred is the world's first blockchain-based protocol for personal skills and knowledge verification. We transform your abilities into verifiable digital assets, permanently linked to your professional future.",
     "whitepaper": "Read Whitepaper",
     "discord": "Join Discord Community"
   },
@@ -40,15 +40,33 @@
     },
     "step3": {
       "title": "Link & Monetize",
-      "description": "Employers can quickly verify your abilities through your VeriChain profile. You can also use $VRC as reputation backing in our task marketplace to bid for high-end projects and monetize your skills."
+      "description": "Employers can quickly verify your abilities through your VeriCred profile. You can also use $VRC as reputation backing in our task marketplace to bid for high-end projects and monetize your skills."
     }
   },
   "tokenomics": {
     "title": "More Than Just a Token, It's Your Skills Passport ($VRC Token)",
-    "ecosystem": "Ecosystem",
-    "community": "Community",
-    "team": "Team",
-    "reserve": "Reserve",
+    "distribution": {
+      "ecosystemFund": {
+        "title": "Ecosystem Fund (40%)",
+        "description": "To incentivize learners, developers, and educational partners."
+      },
+      "teamAdvisors": {
+        "title": "Team & Advisors (20%)",
+        "description": "12-month lock-up, followed by a 36-month linear vesting period."
+      },
+      "communityEarly": {
+        "title": "Community & Early Supporters (15%)",
+        "description": "For airdrops, community events, and early funding rounds."
+      },
+      "foundationReserve": {
+        "title": "Foundation Reserve (15%)",
+        "description": "For long-term operations and strategic partnerships."
+      },
+      "publicSale": {
+        "title": "Public Sale / Liquidity (10%)",
+        "description": "To provide initial liquidity on decentralized exchanges."
+      }
+    },
     "earn": {
       "title": "Earn Tokens",
       "description": "Complete certification courses, pass skill tests, participate in community governance, and review others' work."
@@ -60,31 +78,53 @@
   },
   "roadmap": {
     "title": "Our Journey",
-    "q3_2025": {
-      "period": "Q3 2025",
-      "title": "Core Protocol Development",
-      "description": "Whitepaper release."
+    "phase1": {
+      "period": "2025 Q1-Q2",
+      "title": "Inception & Foundation",
+      "tasks": [
+        "✅ Project Inception & Core Team Formation.",
+        "✅ Whitepaper V1.0 Draft & Core Protocol Design."
+      ]
     },
-    "q4_2025": {
-      "period": "Q4 2025",
-      "title": "VeriChain Official Website & Community Launch",
-      "description": "Establish partnerships with first batch of educational platforms."
+    "phase2": {
+      "period": "2025 Q3-Q4",
+      "title": "Launch & Initial Testing",
+      "tasks": [
+        "✅ Launch of official website and community channels.",
+        "✅ Publish Whitepaper V1.0.",
+        "✅ Launch of Alpha Testnet with initial test tasks.",
+        "Sign MOUs with the first batch of educational partners."
+      ]
     },
-    "q1_2026": {
-      "period": "Q1 2026",
-      "title": "Beta Application Launch",
-      "description": "Launch first round of skill certification testing."
+    "phase3": {
+      "period": "2026 Q1-Q2",
+      "title": "Protocol Hardening & TGE Preparation",
+      "tasks": [
+        "Launch of incentivized Beta Testnet.",
+        "Smart contracts audited by multiple reputable firms.",
+        "Preparation for Token Generation Event (TGE).",
+        "Grow community to 10,000+ members."
+      ]
     },
-    "q2_2026": {
-      "period": "Q2 2026",
-      "title": "$VRC Token Public Offering",
-      "description": "Launch Talent Marketplace Beta version."
+    "phase4": {
+      "period": "2026 Q3-Q4",
+      "title": "Mainnet Launch & Ecosystem Growth",
+      "tasks": [
+        "$VRC Token Generation Event (TGE) & Public Listing.",
+        "Mainnet Beta launch, supporting the first batch of skill certifications.",
+        "Release of APIs/SDKs for enterprise clients.",
+        "Launch of the decentralized talent marketplace (Beta)."
+      ]
     },
-    "future": {
-      "period": "Future",
-      "title": "Continuous Innovation",
-      "description": "Introduce AI for skill assessment, build decentralized human resources protocol..."
-     }
+    "phase5": {
+      "period": "2027 & Beyond",
+      "title": "Decentralized Autonomy & Future Vision",
+      "tasks": [
+        "Gradual transition of protocol control to the community DAO.",
+        "Exploration of AI integration for automated skill assessment.",
+        "Development of a fully decentralized human resources protocol."
+      ]
+    }
    },
    "footer": {
      "description": "Your skills, impossible to forge.",
@@ -99,6 +139,31 @@
      "contact": "Contact",
      "whitepaper": "Whitepaper",
      "community": "Community",
-     "copyright": "© 2025 VeriChain. All Rights Reserved."
-   }
- }
+     "copyright": "© 2025 VeriCred. All Rights Reserved."
+  },
+  "team": {
+    "title": "Team & Advisors",
+    "members": {
+      "alexChen": {
+        "name": "Alex Chen",
+        "position": "Founder & CEO",
+        "bio": "A product visionary with over a decade of experience in HR technology. Alex was formerly a Senior Product Manager at LinkedIn's Talent Solutions division, where he was responsible for developing enterprise-level skill analytics tools that helped Fortune 500 companies understand their workforce capabilities."
+      },
+      "priyaSharma": {
+        "name": "Priya Sharma",
+        "position": "CTO",
+        "bio": "A seasoned distributed systems engineer with deep expertise in Web3. Priya previously worked as a Staff Software Engineer at Google Cloud, specializing in decentralized identity protocols and large-scale data processing systems for emerging technologies."
+      },
+      "benCarter": {
+        "name": "Ben Carter",
+        "position": "COO",
+        "bio": "A growth and operations expert with a proven track record in scaling Web3 ecosystems. Ben was formerly the Head of Growth for APAC at a leading Web3 infrastructure platform, where he led ecosystem partnerships and expanded the community across more than a dozen countries."
+      },
+      "evelynReed": {
+        "name": "Dr. Evelyn Reed",
+        "position": "Advisor",
+        "bio": "A respected academic in the field of digital economy. Dr. Reed is a Research Fellow at Stanford's Digital Economy Lab, where her work focuses on the future of work, digital credentialing systems, and the impact of technology on labor markets."
+      }
+    }
+  }
+}

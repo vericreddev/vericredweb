@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "你的技能，从此无法伪造",
-    "description": "VeriChain 是全球首个基于区块链的个人技能与知识确权协议。我们将你的能力转化为可验证的数字资产，永久链接你的职业未来。",
+    "description": "VeriCred 是全球首个基于区块链的个人技能与知识确权协议。我们将你的能力转化为可验证的数字资产，永久链接你的职业未来。",
     "whitepaper": "阅读白皮书",
     "discord": "加入 Discord 社区"
   },
@@ -40,7 +40,7 @@
     },
     "step3": {
       "title": "链接与变现 (Link & Monetize)",
-      "description": "雇主可以通过你的 VeriChain 档案快速验证你的能力。你也可以在我们的任务市场中，用 $VRC 作为信誉背书，竞标高端项目，实现技能变现。"
+      "description": "雇主可以通过你的 VeriCred 档案快速验证你的能力。你也可以在我们的任务市场中，用 $VRC 作为信誉背书，竞标高端项目，实现技能变现。"
     }
   },
   "tokenomics": {
@@ -60,31 +60,53 @@
   },
   "roadmap": {
     "title": "我们的征途",
-    "q3_2025": {
-      "period": "Q3 2025",
-      "title": "核心协议开发",
-      "description": "白皮书发布。"
+    "phase1": {
+      "period": "2025 Q1-Q2",
+      "title": "项目启动与基础建设",
+      "tasks": [
+        "✅ 项目启动与核心团队组建。",
+        "✅ 白皮书V1.0草案与核心协议设计。"
+      ]
     },
-    "q4_2025": {
-      "period": "Q4 2025",
-      "title": "VeriChain 官网及社区启动",
-      "description": "与首批教育平台建立合作。"
+    "phase2": {
+      "period": "2025 Q3-Q4",
+      "title": "发布与初步测试",
+      "tasks": [
+        "✅ 官方网站和社区渠道上线。",
+        "✅ 发布白皮书V1.0。",
+        "✅ Alpha测试网上线，包含初始测试任务。",
+        "与首批教育合作伙伴签署合作备忘录。"
+      ]
     },
-    "q1_2026": {
-      "period": "Q1 2026",
-      "title": "Beta版应用上线",
-      "description": "开启首轮技能认证测试。"
+    "phase3": {
+      "period": "2026 Q1-Q2",
+      "title": "协议强化与代币发行准备",
+      "tasks": [
+        "激励性Beta测试网上线。",
+        "智能合约由多家知名机构审计。",
+        "代币生成事件（TGE）准备工作。",
+        "社区成员增长至10,000+。"
+      ]
     },
-    "q2_2026": {
-      "period": "Q2 2026",
-      "title": "$VRC 代币公开发行",
-      "description": "上线任务市场（Talent Marketplace）Beta版。"
+    "phase4": {
+      "period": "2026 Q3-Q4",
+      "title": "主网上线与生态增长",
+      "tasks": [
+        "$VRC代币生成事件（TGE）与公开上市。",
+        "主网Beta版上线，支持首批技能认证。",
+        "为企业客户发布API/SDK。",
+        "去中心化人才市场（Beta版）上线。"
+      ]
     },
-    "future": {
-      "period": "未来",
-      "title": "持续创新",
-      "description": "引入AI进行技能评估、构建去中心化人力资源协议……"
-     }
+    "phase5": {
+      "period": "2027年及以后",
+      "title": "去中心化自治与未来愿景",
+      "tasks": [
+        "协议控制权逐步过渡至社区DAO。",
+        "探索AI集成用于自动化技能评估。",
+        "开发完全去中心化的人力资源协议。"
+      ]
+    }
    },
    "footer": {
      "description": "你的技能，从此无法伪造。",
@@ -99,6 +121,31 @@
      "contact": "联系我们",
      "whitepaper": "白皮书",
      "community": "社区",
-     "copyright": "© 2025 VeriChain. 保留所有权利。"
-   }
- }
+     "copyright": "© 2025 VeriCred. 保留所有权利。"
+  },
+  "team": {
+    "title": "团队与顾问",
+    "members": {
+      "alexChen": {
+        "name": "Alex Chen",
+        "position": "创始人兼首席执行官",
+        "bio": "在人力资源技术领域拥有十多年经验的产品愿景家。Alex曾担任LinkedIn人才解决方案部门的高级产品经理，负责开发企业级技能分析工具，帮助财富500强公司了解其员工能力。"
+      },
+      "priyaSharma": {
+        "name": "Priya Sharma",
+        "position": "首席技术官",
+        "bio": "经验丰富的分布式系统工程师，在Web3领域拥有深厚的专业知识。Priya曾在Google Cloud担任高级软件工程师，专门从事去中心化身份协议和新兴技术的大规模数据处理系统。"
+      },
+      "benCarter": {
+        "name": "Ben Carter",
+        "position": "首席运营官",
+        "bio": "在扩展Web3生态系统方面拥有良好记录的增长和运营专家。Ben曾担任领先Web3基础设施平台亚太区增长负责人，领导生态系统合作伙伴关系并在十多个国家扩展社区。"
+      },
+      "evelynReed": {
+        "name": "Evelyn Reed博士",
+        "position": "顾问",
+        "bio": "数字经济领域备受尊敬的学者。Reed博士是斯坦福大学数字经济实验室的研究员，她的工作重点是未来工作、数字认证系统以及技术对劳动力市场的影响。"
+      }
+    }
+  }
+}

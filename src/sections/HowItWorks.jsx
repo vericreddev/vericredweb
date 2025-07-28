@@ -38,7 +38,7 @@ const HowItWorks = () => {
         
         <div className="relative max-w-3xl mx-auto">
           {/* Vertical Line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-accent/30 transform md:translate-x-[-0.5px] hidden md:block" />
+          <div className="absolute left-6 top-12 bottom-16 w-px bg-accent/30 hidden md:block" />
           
           {steps.map((step, index) => (
             <motion.div 
@@ -50,7 +50,7 @@ const HowItWorks = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="flex flex-col md:flex-row items-start gap-6">
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-accent text-white font-bold text-lg z-10">
+                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-accent text-white font-bold text-lg z-10 relative">
                   {step.number}
                 </div>
                 

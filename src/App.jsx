@@ -9,6 +9,7 @@ import Hero from './sections/Hero';
 import Problem from './sections/Problem';
 import HowItWorks from './sections/HowItWorks';
 import Tokenomics from './sections/Tokenomics';
+import Team from './sections/Team';
 import Roadmap from './sections/Roadmap';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Problem />
         <HowItWorks />
         <Tokenomics />
+        <Team />
         <Roadmap />
       </main>
       <Footer />

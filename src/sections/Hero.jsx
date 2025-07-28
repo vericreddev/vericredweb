@@ -6,7 +6,14 @@ import { Link } from 'react-router-dom';
 const Hero = () => {
   const { t } = useTranslation();
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section className="relative min-h-screen flex items-center pt-20" style={{
+      backgroundImage: 'url(/background.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40" />
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Grid Background */}
@@ -21,19 +28,21 @@ const Hero = () => {
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.h1 
-            className="text-4xl md:text-6xl font-bold text-white mb-6"
+            className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}
           >
             {t('hero.title')}
           </motion.h1>
           
           <motion.p 
-            className="text-light text-lg md:text-xl mb-10"
+            className="text-gray-100 text-lg md:text-xl mb-10 drop-shadow-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}
           >
             {t('hero.description')}
           </motion.p>
@@ -47,8 +56,8 @@ const Hero = () => {
             <Link to="/whitepaper" className="btn btn-primary w-full sm:w-auto">
               {t('hero.whitepaper')}
             </Link>
-            <a href="#" className="btn btn-secondary w-full sm:w-auto">
-              {t('hero.discord')}
+            <a href="https://app.vericred.app" target="_blank" rel="noopener noreferrer" className="btn btn-secondary w-full sm:w-auto">
+              Launch App
             </a>
           </motion.div>
         </div>

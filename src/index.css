@@ -38,7 +38,7 @@ body {
   }
   
   .btn-secondary {
-    @apply bg-transparent border border-accent text-accent hover:bg-accent hover:bg-opacity-10;
+    @apply bg-accent bg-opacity-20 border border-accent text-white hover:bg-accent hover:bg-opacity-30;
   }
   
   .card {

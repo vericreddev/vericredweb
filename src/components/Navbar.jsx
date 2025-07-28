@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/80 backdrop-blur-md py-3 shadow-lg' : 'py-5'}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/90 backdrop-blur-md py-3 shadow-lg' : 'bg-primary/70 backdrop-blur-sm py-5'}`}
     >
       <div className="container flex items-center justify-between">
         {!isNotHomePage ? (

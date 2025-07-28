@@ -1,5 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import team1 from '../assets/1.png';
+import team2 from '../assets/2.png';
+import team3 from '../assets/3.png';
+import team4 from '../assets/4.png';
 
 const Team = () => {
   const { t } = useTranslation();
@@ -7,19 +11,19 @@ const Team = () => {
   const teamMembers = [
     {
       key: 'alexChen',
-      image: '/api/placeholder/300/300'
+      image: team1
     },
     {
       key: 'priyaSharma',
-      image: '/api/placeholder/300/300'
+      image: team2
     },
     {
       key: 'benCarter',
-      image: '/api/placeholder/300/300'
+      image: team3
     },
     {
       key: 'evelynReed',
-      image: '/api/placeholder/300/300'
+      image: team4
     }
   ];
 
@@ -48,10 +52,12 @@ const Team = () => {
               viewport={{ once: true }}
               className="bg-primary/50 backdrop-blur-sm border border-accent/20 rounded-xl overflow-hidden hover:border-accent/40 transition-all duration-300"
             >
-              <div className="aspect-square bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                  {t(`team.members.${member.key}.name`).charAt(0)}
-                </div>
+              <div className="aspect-square bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center overflow-hidden">
+                <img 
+                  src={member.image} 
+                  alt={t(`team.members.${member.key}.name`)}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <div className="p-6">

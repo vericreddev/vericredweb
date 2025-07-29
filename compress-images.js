@@ -2,7 +2,7 @@ import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
 
-// 图片文件路径
+// Image file paths
 const imagePaths = [
   './src/assets/1.png',
   './src/assets/2.png',
@@ -17,7 +17,7 @@ async function compressImage(inputPath) {
     const name = path.basename(inputPath, ext);
     const outputPath = path.join(dir, `${name}_compressed${ext}`);
     
-    console.log(`压缩 ${inputPath}...`);
+    console.log(`Compressing ${inputPath}...`);
     
     if (ext === '.jpg' || ext === '.jpeg') {
       await sharp(inputPath)
@@ -29,39 +29,39 @@ async function compressImage(inputPath) {
         .toFile(outputPath);
     }
     
-    // 获取文件大小
+    // Get file sizes
     const originalSize = fs.statSync(inputPath).size;
     const compressedSize = fs.statSync(outputPath).size;
     const reduction = ((originalSize - compressedSize) / originalSize * 100).toFixed(1);
     
-    console.log(`${inputPath}: ${(originalSize/1024/1024).toFixed(2)}MB -> ${(compressedSize/1024/1024).toFixed(2)}MB (减少 ${reduction}%)`);
+    console.log(`${inputPath}: ${(originalSize/1024/1024).toFixed(2)}MB -> ${(compressedSize/1024/1024).toFixed(2)}MB (reduced ${reduction}%)`);
     
-    // 如果压缩效果明显，替换原文件
+    // Replace original file if compression is significant
     if (compressedSize < originalSize * 0.9) {
       fs.renameSync(outputPath, inputPath);
-      console.log(`已替换原文件: ${inputPath}`);
+      console.log(`Original file replaced: ${inputPath}`);
     } else {
       fs.unlinkSync(outputPath);
-      console.log(`压缩效果不明显，保留原文件: ${inputPath}`);
+      console.log(`Compression not significant, keeping original: ${inputPath}`);
     }
     
   } catch (error) {
-    console.error(`压缩 ${inputPath} 失败:`, error.message);
+    console.error(`Failed to compress ${inputPath}:`, error.message);
   }
 }
 
 async function compressAllImages() {
-  console.log('开始压缩图片...');
+  console.log('Starting image compression...');
   
   for (const imagePath of imagePaths) {
     if (fs.existsSync(imagePath)) {
       await compressImage(imagePath);
     } else {
-      console.log(`文件不存在: ${imagePath}`);
+      console.log(`File not found: ${imagePath}`);
     }
   }
   
-  console.log('图片压缩完成!');
+  console.log('Image compression completed!');
 }
 
 compressAllImages();

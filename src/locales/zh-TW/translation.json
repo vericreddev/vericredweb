@@ -181,7 +181,9 @@
       "title": "準備好參與了嗎？",
       "description": "加入數千名開發者、學習者和行業專家，共同構建技能驗證的未來。",
       "joinDiscord": "加入Discord",
-      "followTwitter": "追蹤Twitter"
+      "followTwitter": "追蹤Twitter",
+      "joinTelegram": "加入Telegram",
+      "readMedium": "閱讀Medium"
     },
     "modal": {
       "title": "社區",

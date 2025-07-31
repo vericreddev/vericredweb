@@ -199,7 +199,9 @@
       "title": "Ready to Get Involved?",
       "description": "Join thousands of developers, learners, and industry experts who are building the future of skill verification together.",
       "joinDiscord": "Join Discord",
-      "followTwitter": "Follow on Twitter"
+      "followTwitter": "Follow on Twitter",
+      "joinTelegram": "Join Telegram",
+      "readMedium": "Read on Medium"
     },
     "modal": {
       "title": "Community",

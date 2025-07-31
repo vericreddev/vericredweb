@@ -181,7 +181,9 @@
       "title": "准备好参与了吗？",
       "description": "加入数千名开发者、学习者和行业专家，共同构建技能验证的未来。",
       "joinDiscord": "加入Discord",
-      "followTwitter": "关注Twitter"
+      "followTwitter": "关注Twitter",
+      "joinTelegram": "加入Telegram",
+      "readMedium": "阅读Medium"
     }
   }
 }

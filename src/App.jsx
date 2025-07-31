@@ -24,7 +24,6 @@ const HomePage = () => (
     <Tokenomics />
     <Team />
     <Roadmap />
-    <Community />
   </main>
 );
 

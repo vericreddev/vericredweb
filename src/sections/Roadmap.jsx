@@ -34,7 +34,7 @@ const Roadmap = () => {
   ];
 
   return (
-    <section id="roadmap" className="py-20 bg-primary/30">
+    <section id="roadmap" className="pt-20 pb-10 bg-primary/30">
       <div className="container">
         <motion.h2 
           className="section-title"

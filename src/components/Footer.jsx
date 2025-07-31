@@ -7,6 +7,8 @@ const Footer = () => {
   
   return (
     <footer className="bg-primary/50 py-12 mt-20">
+      {/* Top divider line */}
+      <div className="border-t border-white/10 mb-12"></div>
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Side */}

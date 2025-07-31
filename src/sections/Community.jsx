@@ -93,7 +93,7 @@ const Community = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-primary text-white pt-20">
+    <div id="community" className="min-h-screen bg-primary text-white pt-20">
       {/* Coming Soon Modal */}
       {showComingSoon && (
         <motion.div
